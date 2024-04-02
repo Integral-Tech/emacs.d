@@ -12,12 +12,13 @@
  '(global-company-mode t)
  '(lsp-dired-mode t)
  '(package-selected-packages
-   '(lsp-treemacs ccls projectile-ripgrep projectile magit rust-mode company))
+   '(org-modern lsp-treemacs ccls projectile-ripgrep projectile magit rust-mode company))
  '(warning-suppress-log-types '((comp))))
 
 (setq gc-cons-threshold 100000000)
 (setq read-process-output-max (* 1024 1024)) ;; 1mb
 (setq lsp-log-io nil) ; if set to true can cause a performance hit
+(setq org-hide-emphasis-markers t)
 
 (add-hook 'c-mode-hook 'lsp)
 (add-hook 'rust-mode-hook 'lsp)
@@ -26,6 +27,8 @@
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
 (add-to-list 'default-frame-alist
              '(font . "Sarasa Term SC 11"))
+
+(with-eval-after-load 'org (global-org-modern-mode))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
