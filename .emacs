@@ -10,7 +10,7 @@
  '(custom-enabled-themes '(wombat))
  '(gdb-many-windows t)
  '(global-company-mode t)
- '(lsp-dired-mode t)
+ '(lsp-dired-mode t nil (lsp-dired))
  '(package-selected-packages
    '(org-modern lsp-treemacs ccls projectile-ripgrep projectile magit rust-mode company))
  '(warning-suppress-log-types '((comp))))
