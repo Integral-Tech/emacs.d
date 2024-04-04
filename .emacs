@@ -18,6 +18,7 @@
 (setq gc-cons-threshold 100000000)
 (setq read-process-output-max (* 1024 1024)) ;; 1mb
 (setq lsp-log-io nil) ; if set to true can cause a performance hit
+
 (setq org-hide-emphasis-markers t)
 (setq org-startup-with-inline-images t)
 (setq org-image-actual-width 500)
@@ -31,6 +32,18 @@
              '(font . "Sarasa Term SC 11"))
 
 (with-eval-after-load 'org (global-org-modern-mode))
+
+(defun erc-login ()
+  (interactive)
+  (erc-tls :server "irc.libera.chat" :port 6697
+           :nick "Integral_Tech"
+           :user "Integral_Tech"
+           :client-certificate
+           '("/home/integral/Documents/libera-irc/libera.key"
+           "/home/integral/Documents/libera-irc/libera.pem")))
+
+(setq erc-autojoin-channels-alist
+      '(("Libera.Chat" "#emacs" "#erc" "#parabola" "#guix" "#guix-offtopic")))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
