@@ -19,6 +19,8 @@
 (setq read-process-output-max (* 1024 1024)) ;; 1mb
 (setq lsp-log-io nil) ; if set to true can cause a performance hit
 (setq org-hide-emphasis-markers t)
+(setq org-startup-with-inline-images t)
+(setq org-image-actual-width 500)
 
 (add-hook 'c-mode-hook 'lsp)
 (add-hook 'rust-mode-hook 'lsp)
