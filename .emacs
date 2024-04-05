@@ -12,7 +12,7 @@
  '(global-company-mode t)
  '(lsp-dired-mode t nil (lsp-dired))
  '(package-selected-packages
-   '(org-modern lsp-treemacs ccls projectile-ripgrep projectile magit rust-mode company))
+   '(org-modern forge lsp-treemacs ccls projectile magit rust-mode company))
  '(warning-suppress-log-types '((comp))))
 
 (setq gc-cons-threshold 100000000)
