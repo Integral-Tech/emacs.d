@@ -31,6 +31,9 @@
    ("invent.kde.org" "invent.kde.org/api/v4" "invent.kde.org" forge-gitlab-repository)
    ("codeberg.org" "codeberg.org/api/v1" "codeberg.org" forge-gitea-repository)))
 
+(setq erc-autojoin-channels-alist
+      '(("Libera.Chat" "#emacs" "#erc" "#parabola" "#guix" "#guix-offtopic")))
+
 (add-hook 'c-mode-hook 'lsp)
 (add-hook 'rust-mode-hook 'lsp)
 (add-hook 'emacs-startup-hook 'treemacs)
@@ -49,9 +52,6 @@
            :client-certificate
            '("/home/integral/Documents/libera-irc/libera.key"
            "/home/integral/Documents/libera-irc/libera.pem")))
-
-(setq erc-autojoin-channels-alist
-      '(("Libera.Chat" "#emacs" "#erc" "#parabola" "#guix" "#guix-offtopic")))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
