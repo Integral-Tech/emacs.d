@@ -23,6 +23,8 @@
 (setq org-startup-with-inline-images t)
 (setq org-image-actual-width 500)
 
+(setq epa-pinentry-mode 'loopback)
+
 (setq forge-alist
  '(("github.com" "api.github.com" "github.com" forge-github-repository)
    ("gitlab.com" "gitlab.com/api/v4" "gitlab.com" forge-gitlab-repository)
