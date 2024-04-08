@@ -43,6 +43,8 @@
              '(font . "Sarasa Term SC 11"))
 
 (with-eval-after-load 'org (global-org-modern-mode))
+(org-babel-do-load-languages
+ 'org-babel-load-languages '((C . t)))
 
 (defun erc-login ()
   (interactive)
