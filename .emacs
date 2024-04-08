@@ -20,6 +20,7 @@
 (setq lsp-log-io nil) ; if set to true can cause a performance hit
 
 (setq org-hide-emphasis-markers t)
+(setq org-startup-indented t)
 (setq org-startup-with-inline-images t)
 (setq org-image-actual-width 500)
 
