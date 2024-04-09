@@ -10,7 +10,6 @@
  '(custom-enabled-themes '(wombat))
  '(gdb-many-windows t)
  '(global-company-mode t)
- '(lsp-dired-mode t nil (lsp-dired))
  '(package-selected-packages
    '(org-modern forge lsp-treemacs ccls projectile magit rust-mode company))
  '(warning-suppress-log-types '((comp))))
