@@ -35,6 +35,7 @@
       '(("Libera.Chat" "#emacs" "#erc" "#parabola" "#guix" "#guix-offtopic")))
 
 (add-hook 'c-mode-hook 'lsp)
+(add-hook 'c++-mode-hook 'lsp)
 (add-hook 'rust-mode-hook 'lsp)
 (add-hook 'emacs-startup-hook 'treemacs)
 
