@@ -47,6 +47,10 @@
 (org-babel-do-load-languages
  'org-babel-load-languages '((C . t)))
 
+(setq auto-mode-alist
+      (cons '("\\.po\\'\\|\\.po\\." . po-mode) auto-mode-alist))
+(autoload 'po-mode "po-mode" "Major mode for translators to edit PO files" t)
+
 (defun erc-login ()
   (interactive)
   (erc-tls :server "irc.libera.chat" :port 6697
