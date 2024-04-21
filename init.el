@@ -18,21 +18,7 @@
 (setq read-process-output-max (* 1024 1024)) ;; 1mb
 (setq lsp-log-io nil) ; if set to true can cause a performance hit
 
-(setq org-hide-emphasis-markers t)
-(setq org-startup-indented t)
-(setq org-startup-with-inline-images t)
-(setq org-image-actual-width 500)
-
 (setq epa-pinentry-mode 'loopback)
-
-(setq forge-alist
- '(("github.com" "api.github.com" "github.com" forge-github-repository)
-   ("gitlab.com" "gitlab.com/api/v4" "gitlab.com" forge-gitlab-repository)
-   ("invent.kde.org" "invent.kde.org/api/v4" "invent.kde.org" forge-gitlab-repository)
-   ("codeberg.org" "codeberg.org/api/v1" "codeberg.org" forge-gitea-repository)))
-
-(setq erc-autojoin-channels-alist
-      '(("Libera.Chat" "#emacs" "#erc" "#parabola" "#guix" "#guix-offtopic")))
 
 (add-hook 'c-mode-hook 'lsp)
 (add-hook 'c++-mode-hook 'lsp)
@@ -43,22 +29,10 @@
 (add-to-list 'default-frame-alist
              '(font . "Sarasa Term SC 11"))
 
-(with-eval-after-load 'org (global-org-modern-mode))
-(org-babel-do-load-languages
- 'org-babel-load-languages '((C . t)))
-
-(setq auto-mode-alist
-      (cons '("\\.po\\'\\|\\.po\\." . po-mode) auto-mode-alist))
-(autoload 'po-mode "po-mode" "Major mode for translators to edit PO files" t)
-
-(defun erc-login ()
-  (interactive)
-  (erc-tls :server "irc.libera.chat" :port 6697
-           :nick "Integral_Tech"
-           :user "Integral_Tech"
-           :client-certificate
-           '("/home/integral/Documents/libera-irc/libera.key"
-           "/home/integral/Documents/libera-irc/libera.pem")))
+(load-file ".emacs.d/lisp/forge.el")
+(load-file ".emacs.d/lisp/org-mode.el")
+(load-file ".emacs.d/lisp/erc.el")
+(load-file ".emacs.d/lisp/po-mode.el")
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
