@@ -22,11 +22,12 @@
 (add-to-list 'default-frame-alist
              '(font . "Sarasa Term SC 11"))
 
-(load-file ".emacs.d/lisp/lsp.el")
-(load-file ".emacs.d/lisp/forge.el")
-(load-file ".emacs.d/lisp/org-mode.el")
-(load-file ".emacs.d/lisp/erc.el")
-(load-file ".emacs.d/lisp/po-mode.el")
+(add-to-list 'load-path "~/.emacs.d/lisp/")
+(load "lsp")
+(load "forge")
+(load "org-mode")
+(load "erc")
+(load "po-mode")
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
