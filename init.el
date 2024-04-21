@@ -14,21 +14,15 @@
    '(org-modern forge lsp-treemacs ccls projectile magit rust-mode company))
  '(warning-suppress-log-types '((comp))))
 
-(setq gc-cons-threshold 100000000)
-(setq read-process-output-max (* 1024 1024)) ;; 1mb
-(setq lsp-log-io nil) ; if set to true can cause a performance hit
-
 (setq epa-pinentry-mode 'loopback)
 
-(add-hook 'c-mode-hook 'lsp)
-(add-hook 'c++-mode-hook 'lsp)
-(add-hook 'rust-mode-hook 'lsp)
 (add-hook 'emacs-startup-hook 'treemacs)
 
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
 (add-to-list 'default-frame-alist
              '(font . "Sarasa Term SC 11"))
 
+(load-file ".emacs.d/lisp/lsp.el")
 (load-file ".emacs.d/lisp/forge.el")
 (load-file ".emacs.d/lisp/org-mode.el")
 (load-file ".emacs.d/lisp/erc.el")
