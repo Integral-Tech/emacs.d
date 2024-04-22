@@ -7,5 +7,5 @@
            :nick "Integral_Tech"
            :user "Integral_Tech"
            :client-certificate
-           '("/home/integral/Documents/libera-irc/libera.key"
-           "/home/integral/Documents/libera-irc/libera.pem")))
+           '("Documents/libera-irc/libera.key"
+           "Documents/libera-irc/libera.pem")))
