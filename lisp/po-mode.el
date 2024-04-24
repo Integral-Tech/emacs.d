@@ -1,3 +1,7 @@
+;;; SPDX-FileCopyrightText: 2024 Integral <integral@member.fsf.org>
+;;;
+;;; SPDX-License-Identifier: GPL-3.0-or-later
+
 (setq auto-mode-alist
       (cons '("\\.po\\'\\|\\.po\\." . po-mode) auto-mode-alist))
 (autoload 'po-mode "po-mode" "Major mode for translators to edit PO files" t)

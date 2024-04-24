@@ -1,3 +1,7 @@
+;;; SPDX-FileCopyrightText: 2024 Integral <integral@member.fsf.org>
+;;;
+;;; SPDX-License-Identifier: GPL-3.0-or-later
+
 (setq forge-alist
  '(("github.com" "api.github.com" "github.com" forge-github-repository)
    ("gitlab.com" "gitlab.com/api/v4" "gitlab.com" forge-gitlab-repository)

@@ -1,3 +1,7 @@
+;;; SPDX-FileCopyrightText: 2024 Integral <integral@member.fsf.org>
+;;;
+;;; SPDX-License-Identifier: GPL-3.0-or-later
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
