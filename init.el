@@ -14,8 +14,6 @@
  '(custom-enabled-themes '(wombat))
  '(gdb-many-windows t)
  '(global-company-mode t)
- '(package-selected-packages
-   '(org-modern forge lsp-treemacs ccls projectile magit rust-mode company))
  '(warning-suppress-log-types '((comp))))
 
 (setq epa-pinentry-mode 'loopback)
