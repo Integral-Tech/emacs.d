@@ -15,7 +15,7 @@
  '(gdb-many-windows t)
  '(global-company-mode t)
  '(package-selected-packages
-   '(org-modern forge lsp-treemacs ccls projectile magit rust-mode company))
+   '(forge magit company ghub org-modern with-editor rust-mode projectile magit-section lsp-dart closql))
  '(warning-suppress-log-types '((comp))))
 
 (setq epa-pinentry-mode 'loopback)
