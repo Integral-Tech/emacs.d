@@ -8,5 +8,9 @@
 
 (add-hook 'c-mode-hook 'lsp)
 (add-hook 'c++-mode-hook 'lsp)
+(add-hook 'cmake-mode-hook 'lsp)
+(add-hook 'meson-mode-hook 'lsp)
 (add-hook 'rust-mode-hook 'lsp)
 (add-hook 'dart-mode-hook 'lsp)
+(add-hook 'sh-mode-hook 'lsp)
+(add-hook 'yaml-mode-hook 'lsp)
