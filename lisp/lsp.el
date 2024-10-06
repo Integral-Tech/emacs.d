@@ -6,6 +6,8 @@
 (setq read-process-output-max (* 1024 1024)) ;; 1mb
 (setq lsp-log-io nil) ; if set to true can cause a performance hit
 
+(setq sh-shell-file "bash")
+
 (add-hook 'c-mode-hook 'lsp)
 (add-hook 'c++-mode-hook 'lsp)
 (add-hook 'cmake-mode-hook 'lsp)
