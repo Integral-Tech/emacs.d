@@ -15,7 +15,7 @@
  '(gdb-many-windows t)
  '(global-company-mode t)
  '(package-selected-packages
-   '(forge magit company ghub org-modern with-editor rust-mode projectile magit-section lsp-dart closql))
+   '(yaml-mode meson-mode cmake-mode forge company ghub magit-section org-modern with-editor rust-mode projectile lsp-dart closql))
  '(warning-suppress-log-types '((comp))))
 
 (setq epa-pinentry-mode 'loopback)
