@@ -22,6 +22,7 @@
 
 (add-hook 'emacs-startup-hook 'treemacs)
 
+(require 'package)
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
 (add-to-list 'default-frame-alist
              '(font . "Sarasa Term SC 11"))
