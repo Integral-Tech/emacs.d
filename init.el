@@ -21,6 +21,7 @@
 (setq epa-pinentry-mode 'loopback)
 
 (add-hook 'emacs-startup-hook 'treemacs)
+(add-hook 'prog-mode-hook 'display-line-numbers-mode)
 
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
