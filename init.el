@@ -14,9 +14,10 @@
 (setq use-package-always-defer t)
 
 (load "~/.emacs.d/lisp/lsp.el")
-(load "~/.emacs.d/lisp/gdb.el")
 (load "~/.emacs.d/lisp/magit.el")
+(load "~/.emacs.d/lisp/gdb.el")
+(load "~/.emacs.d/lisp/vterm.el")
 (load "~/.emacs.d/lisp/epa.el")
 (load "~/.emacs.d/lisp/org-mode.el")
-(load "~/.emacs.d/lisp/erc.el")
 (load "~/.emacs.d/lisp/po-mode.el")
+(load "~/.emacs.d/lisp/erc.el")
