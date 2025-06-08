@@ -18,7 +18,7 @@
  '(global-company-mode t)
  '(package-selected-packages
    '(closql cmake-mode company forge ghub lsp-treemacs magit-delta
-	    magit-section meson-mode org-modern rust-mode with-editor
+	    magit-section org-modern rust-mode with-editor
 	    yaml-mode))
  '(warning-suppress-log-types '((comp))))
 
