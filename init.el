@@ -8,14 +8,18 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(company-backends
-   '(company-capf company-semantic company-clang company-cmake company-files
-		  (company-dabbrev-code company-gtags company-etags company-keywords)
+   '(company-capf company-semantic company-clang company-cmake
+		  company-files
+		  (company-dabbrev-code company-gtags company-etags
+					company-keywords)
 		  company-oddmuse company-dabbrev))
  '(custom-enabled-themes '(wombat))
  '(gdb-many-windows t)
  '(global-company-mode t)
  '(package-selected-packages
-   '(lsp-treemacs yaml-mode meson-mode cmake-mode forge company ghub magit-section org-modern with-editor rust-mode closql))
+   '(closql cmake-mode company forge ghub lsp-treemacs magit-delta
+	    magit-section meson-mode org-modern rust-mode with-editor
+	    yaml-mode))
  '(warning-suppress-log-types '((comp))))
 
 (setq epa-pinentry-mode 'loopback)
@@ -29,6 +33,7 @@
              '(font . "Sarasa Term SC 11"))
 
 (load "~/.emacs.d/lisp/lsp.el")
+(load "~/.emacs.d/lisp/magit.el")
 (load "~/.emacs.d/lisp/forge.el")
 (load "~/.emacs.d/lisp/org-mode.el")
 (load "~/.emacs.d/lisp/erc.el")
