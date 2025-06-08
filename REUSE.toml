@@ -1,0 +1,5 @@
+version = 1
+SPDX-PackageName = "My Personal Emacs Configuration"
+SPDX-PackageSupplier = "Integral <integral@member.fsf.org>"
+SPDX-PackageDownloadLocation = "https://codeberg.org/Integral/emacs.d"
+annotations = []
