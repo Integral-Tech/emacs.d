@@ -18,9 +18,8 @@
 (use-package rust-mode :hook (rust-mode . lsp))
 (use-package yaml-mode :hook (yaml-mode . lsp))
 
-(use-package
-  company
-  :hook prog-mode
+(use-package company
+  :hook (prog-mode text-mode)
   :config
   (setq company-backends
     '(company-capf company-semantic company-clang company-cmake company-files
