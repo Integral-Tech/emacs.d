@@ -6,7 +6,7 @@ SPDX-License-Identifier: GPL-3.0-or-later
 
 # emacs.d
 
-My Personal Emacs Configuration
+My Naive Emacs Configuration
 
 ## Prerequisites
 
