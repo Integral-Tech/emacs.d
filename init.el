@@ -13,6 +13,9 @@
 (setq use-package-always-ensure t)
 (setq use-package-always-defer t)
 
+(add-hook 'prog-mode-hook 'display-line-numbers-mode)
+(add-hook 'text-mode-hook 'display-line-numbers-mode)
+
 (load "~/.emacs.d/lisp/lsp.el")
 (load "~/.emacs.d/lisp/magit.el")
 (load "~/.emacs.d/lisp/gdb.el")

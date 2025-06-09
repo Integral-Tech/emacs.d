@@ -26,5 +26,3 @@
     '(company-capf company-semantic company-clang company-cmake company-files
      (company-dabbrev-code company-gtags company-etags company-keywords)
      company-oddmuse company-dabbrev)))
-
-(add-hook 'prog-mode-hook 'display-line-numbers-mode)
