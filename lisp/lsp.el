@@ -12,6 +12,7 @@
 
 (add-hook 'c-mode-hook 'lsp)
 (add-hook 'c++-mode-hook 'lsp)
+(add-hook 'asm-mode-hook 'lsp)
 (add-hook 'sh-mode-hook 'lsp)
 
 (use-package cmake-mode :hook (cmake-mode . lsp))

@@ -13,8 +13,9 @@ My Naive Emacs Configuration
 ### LSP
 
 - [rust-analyzer](https://rust-analyzer.github.io)
-- [bash-language-server](https://github.com/bash-lsp/bash-language-server)
+- [asm-lsp](https://github.com/bergercookie/asm-lsp)
 - [cmake-language-server](https://github.com/regen100/cmake-language-server)
+- [bash-language-server](https://github.com/bash-lsp/bash-language-server)
 - [yaml-language-server](https://github.com/redhat-developer/yaml-language-server)
 
 ### Other packages
