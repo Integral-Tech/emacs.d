@@ -19,5 +19,6 @@
 (load "~/.emacs.d/lisp/vterm.el")
 (load "~/.emacs.d/lisp/epa.el")
 (load "~/.emacs.d/lisp/org-mode.el")
+(load "~/.emacs.d/lisp/tex-mode.el")
 (load "~/.emacs.d/lisp/po-mode.el")
 (load "~/.emacs.d/lisp/erc.el")

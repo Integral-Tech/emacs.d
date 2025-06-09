@@ -11,6 +11,4 @@
   (setq org-startup-truncated nil)
   (setq org-startup-with-inline-images t)
   (setq org-image-actual-width 500)
-  (org-babel-do-load-languages
-    'org-babel-load-languages
-      '((C . t))))
+  (org-babel-do-load-languages 'org-babel-load-languages '((C . t))))
